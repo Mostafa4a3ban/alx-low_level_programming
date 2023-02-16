@@ -11,10 +11,10 @@ char b;
 unsigned int u;
 long long r;
 float f;
-printf("%d", sizeof(a));
-printf("%c", sizeof(b));
-printf("%u", sizeof(u));
-printf("%ll", sizeof(r));
-printf("%f", sizeof(f));
+printf("%d", (int)sizeof(a));
+printf("%c", (char)sizeof(b));
+printf("%u", (unsigned int)sizeof(u));
+printf("%ld", (long unsigned int)sizeof(r));
+printf("%f", (float)sizeof(f));
 return (0);
 }
