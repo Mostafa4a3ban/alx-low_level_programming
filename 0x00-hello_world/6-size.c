@@ -10,9 +10,9 @@ int a;
 char b;
 unsigned int u;
 float f;
-printf("%d\n", (int)sizeof(a));
-printf("%c\n", (char)sizeof(b));
-printf("%u\n", (unsigned int)sizeof(u));
-printf("%f\n", (float)sizeof(f));
+printf("Size of a long long int: %d byte(s)\n", (int)sizeof(a));
+printf("Size of a long long int: %c byte(s)\n", (char)sizeof(b));
+printf("Size of a long long int: %u byte(s)\n", (unsigned int)sizeof(u));
+printf("Size of a long long int: %f byte(s)\n", (float)sizeof(f));
 return (0);
 }
