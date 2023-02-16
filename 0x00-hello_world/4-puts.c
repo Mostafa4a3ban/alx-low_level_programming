@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- *main function
+ *main- entry point
  *
- *return always
+ *
+ *
+ *Return: Always zero
  */
 int main(void)
 {
