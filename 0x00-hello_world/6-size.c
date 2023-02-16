@@ -10,9 +10,9 @@ int a;
 char b;
 unsigned int u;
 float f;
-printf("%d", (int)sizeof(a));
-printf("%c", (char)sizeof(b));
-printf("%u", (unsigned int)sizeof(u));
-printf("%f", (float)sizeof(f));
+printf("%d\n", (int)sizeof(a));
+printf("%c\n", (char)sizeof(b));
+printf("%u\n", (unsigned int)sizeof(u));
+printf("%f\n", (float)sizeof(f));
 return (0);
 }
