@@ -7,6 +7,7 @@
 int main(void)
 {
 int n;
+scanf("%i", &n);
 if (n > 0)
 	printf("%i is positive", n);
 else if (n == 0)
