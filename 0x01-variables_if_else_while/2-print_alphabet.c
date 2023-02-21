@@ -8,6 +8,6 @@ int main(void)
 {
 char n = 'a';
 for (n = 'a' ; n <= 122 ; n++)
-	printf("%c\n", n);
+	printf("%c", n);
 return (0);
 }
