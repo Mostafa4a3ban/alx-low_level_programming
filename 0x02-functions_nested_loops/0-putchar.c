@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- ** _putchar - writes the character c to stdout
- **@c : for char print
- ** Return: On success
- **/
+  * main - the main function
+ * _putchar - writes the character c to stdout
+ * Return: On success
+ */
 int main(void)
 {
 _putchar('_');
