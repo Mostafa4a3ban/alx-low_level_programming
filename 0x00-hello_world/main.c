@@ -6,5 +6,6 @@
  **/
 int main(void)
 {
+putchar('w');
 return (0);
 }
