@@ -5,18 +5,26 @@
  **/
 int main(void)
 {
-int i, j;
-char x = '0', y = '1', z = '2';
-for (i = 0; i < 3; i++)
+int c, i, j;
+for (c = '0'; c < '9'; c++)
 {
-	for (j = 0; j < 1; j++)
+	for (j = '0'; j < '9'; j++)
 	{
-	putchar(x);
-	putchar(y);
-	putchar(z);
+		for (i = '0'; i < '9'; i++)
+		{
+			if (c < j && j < i)
+			{
+				putchar(c);
+				putchar(j);
+				putchar(i);
+			}
+			if (c != '7')
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
-	putchar(',');
-	putchar(' ');
 }
 return (0);
 }
