@@ -17,7 +17,6 @@ for (c = '0'; c <= '9'; c++)
 				putchar(c);
 				putchar(j);
 				putchar(i);
-			
 			if (c != '7')
 			{
 				putchar(',');
@@ -27,5 +26,6 @@ for (c = '0'; c <= '9'; c++)
 		}
 	}
 }
+putchar('\n');
 return (0);
 }
