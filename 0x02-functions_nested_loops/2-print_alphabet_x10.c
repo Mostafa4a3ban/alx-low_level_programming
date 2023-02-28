@@ -10,13 +10,13 @@ int i, count = 0;
 for (i = 97; i <= 122; )
 {
 _putchar(i);
+if (i == 122)
+_putchar('\n');
 if (i == 122 && count < 9)
 {
 i = 96;
 count++;
-_putchar('\n');
 }
 i++;
 }
-_putchar('\n');
 }
