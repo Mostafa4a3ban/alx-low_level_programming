@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-  *main- the main function
-  *@r: the variable
+  *_abs- the absolute function
+  *@n: the variable
   *Return: returns a number
   **/
 int _abs(int n)
