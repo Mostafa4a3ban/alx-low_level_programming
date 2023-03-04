@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-  *jack_bauer: the function that prints the day light
-  *void- no return
+  *jack_bauer - the function
   *
   **/
 void jack_bauer(void)
