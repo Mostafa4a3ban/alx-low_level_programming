@@ -16,7 +16,7 @@ if (n >= 0 && n <= 15)
 			printf("%d", i*j);
 			if(j != n)
 				printf(", ");
-			else
+			else if(j == n)
 				printf("\n");
 		}
 			printf("\n");
