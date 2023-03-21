@@ -6,11 +6,10 @@
   **/
 void print_line(int n)
 {
-	int i = 0;
+	int i = 1;
 
-	while (i >= 0 && i < n)
+	while (i > 0 && i < n)
 	{
-
 		for (i = 0; i <= n; i++)
 		{
 			_putchar('_');
