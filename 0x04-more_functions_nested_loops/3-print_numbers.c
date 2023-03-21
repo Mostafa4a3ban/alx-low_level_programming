@@ -2,7 +2,7 @@
 
 /**
  *print_numbers - print numbers from 0  to 9
- *_putcar- function 
+ *_putcar- function
  **/
 void print_numbers(void)
 {
