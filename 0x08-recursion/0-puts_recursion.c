@@ -1,13 +1,12 @@
 #include "main.h"
 /**
- * *_putchar - print
- **_puts_recursion - print char
- **arr[]@array takes characters
- **@s: string
+ * _puts_recursion - function iteration itself
+ * @p:string
+ * _putchar- used to print a character
  */
-void _puts_recursion(char * p)
+void _puts_recursion(char *p)
 {
-	if(*p == 0 )
+	if (*p == 0)
 	{
 		_putchar('\n');
 	}
@@ -16,5 +15,4 @@ void _puts_recursion(char * p)
 		_putchar(*p);
 		_puts_recursion(p + 1);
 	}
-	
 }
