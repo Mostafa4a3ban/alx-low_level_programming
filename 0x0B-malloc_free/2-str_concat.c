@@ -26,6 +26,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i < strlen(s1))
 			ptr[i] = s1[i];
+		if (i == strlen(s1))
+			ptr[i] = ' ';
 		if (i > strlen(s1) && i < strlen(s2))
 			ptr[i] = s2[i];
 	}
