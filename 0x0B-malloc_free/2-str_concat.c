@@ -26,11 +26,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i < strlen(s1) && s1 != 0)
 			ptr[i] = s1[i];
-		if (i == strlen(s1) && s1 != 0)
+		if (i == strlen(s1))
 			ptr[i] = ' ';
-		if (i > strlen(s1) && i < strlen(s2) && s2 != 0)
+		if (i > strlen(s1) && i < (strlen(s1) + strlen(s2) + 1) && s2 != 0)
 			ptr[i] = s2[i];
-		if (i > strlen(s2)+ strlen(s1) + 1)
+		if (i > (strlen(s2) + strlen(s1) + 1))
 			ptr[i] = '\0';
 	}
 return (ptr);
