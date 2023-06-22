@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == 0 && s2 == 0)
 		return (NULL);
 	ptr = malloc(strlen(s1) + strlen(s2) + 1);
-	for (i = 0 ; i < strlen(s1) + strlen(s2) + 1 ; i++)
+	for (i = 0 ; i < strlen(s1) + strlen(s2) + 2 ; i++)
 	{
 		if (i < strlen(s1))
 			ptr[i] = s1[i];
@@ -30,6 +30,8 @@ char *str_concat(char *s1, char *s2)
 			ptr[i] = ' ';
 		if (i > strlen(s1) && i < strlen(s2))
 			ptr[i] = s2[i];
+		if (i > strlen(s2))
+			ptr[i] = '\0';
 	}
 return (ptr);
 }
