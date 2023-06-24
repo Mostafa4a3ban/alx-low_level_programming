@@ -33,12 +33,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		for (i = 0; i < new_size; i++)
 			buffer[i] = tmp[i];
 		free(ptr);
-		return ((void *) buffer);
+		return ((void *)buffer);
 	}
-	
 	for (i = 0; i < old_size; i++)
 		buffer[i] = tmp[i];
 	free(ptr);
-	
-	return ((void *) buffer);
+	return ((void *)buffer);
 }
