@@ -10,7 +10,7 @@
 int _strlen(char *s)
 {
 	int i = 0;
-	
+
 	while (s[i] != '\0')
 	{
 		i++;
@@ -22,14 +22,13 @@ int _strlen(char *s)
  ** @s1: s1
  ** @s2: s2
  ** @n: number of chars
- **
  ** Return: NULL in fails, pointer to the new string
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len1, len2, size, i;
 	char *buffer;
-	
+
 	if (s1 == NULL)
 		len1 = 0;
 	else
@@ -40,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2 = _strlen(s2);
 	if (n >= len2)
 		n = len2;
-	
+
 	size = len1 + n + 1;
 	buffer = malloc(sizeof(char) * size);
 	if (buffer == NULL)
@@ -51,6 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < n; i++)
 		buffer[len1 + i] = s2[i];
 	buffer[len1 + i] = '\0';
-	
+
 	return (buffer);
 }
