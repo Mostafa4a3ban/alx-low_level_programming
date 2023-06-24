@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * argstostr - concatinate the give arguments
+/**
+ * argstostr - function to pointer
  * @ac: number of arguments
  * @av: Array of pointers to arg of characters
  *
