@@ -7,21 +7,23 @@
 
 int main(void)
 {
-int i, j;
-for (i = '0'; i <= '9' ; i++)
+int i, j, k, l;
+for (i = '0'; i <= '9'; i++)
 {
-	for (j = '0'; j <= '9'; j++)
+	for (j = '0'; j < '9'; j++)
 	{
-		if (i <= j)
-		{
-			putchar(i);
-			putchar(j);
-			if (i != '9')
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+	for (k = '0'; k <= '9'; k++)
+	{
+	for (l = '0'; l <= '9'; l++)
+	{
+	putchar(i);
+	putchar(j);
+	putchar(' ');
+	putchar(k);
+	putchar(l);
+	putchar(',');
+	}
+	}
 	}
 }
 putchar('\n');
