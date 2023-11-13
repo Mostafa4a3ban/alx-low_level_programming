@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-
+/**
+ ** mbinary_to_uint - check the code
+ ***
+ *** Return: Always 0, or conversion.
+ **
+ **/
 unsigned int binary_to_uint(const char *b)
 {
-	int i, j;
+	int i;
 	unsigned int conversion = 0;
 
 	if (b == NULL)
