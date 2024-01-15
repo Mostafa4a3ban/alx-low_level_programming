@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *is_prime_number - primeness
+ *is_prime_number - primeness of a character
  *
  *@n: the argument of prime checking
  *Return: 0 or 1
@@ -22,6 +22,7 @@ int is_prime_number(int n)
  *
  *@num: the element
  *@divisor: the maximum number
+ *Return: to check the return
  */
 int Check_Primeness(int num, int divisor)
 {
@@ -33,7 +34,7 @@ int Check_Primeness(int num, int divisor)
 		}
 		else
 		{
-			return Check_Primeness(num, divisor + 1);
+			return (Check_Primeness(num, divisor + 1));
 		}
 	}
 	else
